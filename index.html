@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Volume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- --+== Bringing in icon sets from font-awesome ==+-- -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
+        crossorigin="anonymous">
+
+    <!-- --+== JQuery ==+-- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- --+== Bringing in Bootstrap ==+-- -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="css/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- --+== My CSS and js ==+-- -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/carousel.css" />
+    <script src="javascript/carousel.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://volumenetwork.com/app/styles.css?v=1.0.0" />
+</head>
+
+<body>
+    <header>
+        <!-- -------- NavBar --------- -->
+        <nav class=" navbar navbar-expand-lg fixed pl-0 py-0 pr-1">
+            <a class="navbar-brand ml-0 mt-0-m"><img src="images/volume.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsable">
+                MENU
+            </button>
+
+            <!-- ----_ Collapsable items _---- -->
+            <div class="collapse navbar-collapse my-0" id="navbarCollapsable">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-link active">
+                        <p>HOME</p>
+                    </li>
+                    <li class="navbar-link">
+                        <p>PROJECTS</p>
+                    </li>
+                    <li class="navbar-link">
+                        <p>PRODUCTS</p>
+                    </li>
+                    <li class="navbar-link">
+                        <p>ABOUT US</p>
+                    </li>
+                    <li class="navbar-link">
+                        <p>CONTACT</p>
+                    </li>
+                    <li class="navbar-link alternate">
+                        <p>WHAT WE DO</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- -------- Jumbotron --------- -->
+        <div class="jumbotron jumbotron-fluid py-0">
+            <div class="row">
+                <div class="col-12 video-promo-wrapper">
+                    <video class="video-promo w-100" muted autoplay loop src="images/volume-promo-2018-v4.mp4" allowfullscreen></video>
+                    <!-- <div class="custom-controls">
+                        <button type="button" class="btn btn-light toggle-play"><i class="fas fa-play"></i></button>
+                        <button type="button" class="btn toggle-play"><i class="fas fa-arrows-alt"></i></button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <!-- -------- Main Card --------- -->
+            <div class="main-content">
+                <h1 class="display-4"> Who We Are</h1>
+                <h1 class="sub-header">Re-Defining Digital Experiences London-Spain</h1>
+                <p>
+                    We are a digital software and hardware company who develop our own bespoke software and
+                    hardware platforms allowing us to control every element of the detailed experience our clients
+                    require.
+                </p>
+                <p>
+                    We work with the world's largest retailers and brands designing digital experiences that
+                    deliver results for the retailer's in-shopper experience whilst ensuring a digitally focused
+                    customer journey that is compelling to the customer.
+                </p>
+                <h1 class="sub-header">What We Do</h1>
+                <ul>
+                    <li>
+                        Software Development
+                    </li>
+                    <li>
+                        Content Production & Licensing
+                    </li>
+                    <li>
+                        Hardware Manufacture
+                    </li>
+                    <li>
+                        Planning & Installation
+                    </li>
+                    <li>
+                        Logistics & Warehousing
+                    </li>
+                    <li>
+                        Customer Support
+                    </li>
+                </ul>
+            </div>
+            <!-- -------- Awards --------- -->
+            <div class="awards">
+                <img src="images/retail-week-finalist-2018.jpg" alt="Retail Week finalist">
+                <img src="images/tech-awards-ecomm-2018.png" alt="TechAwards for eCommerce 2018">
+            </div>
+        </div>
+        </div>
+
+        <!-- -------- Carousel --------- -->
+        <!-- <div class="container">
+            <div class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="col-md-2 carousel-item active">
+                        <div class="panel panel-default">
+                            <img src
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        <!-- -------- Slick Slider -------- -->
+
+        <div class="row content-padding primary-bg fixed-width">
+            <div class="col-md-12">
+                <div class="clients-carousel">
+                    <div class="slick-initialized slick-slider">
+                        <div class="slick-list">
+                            <div class="slick-track">
+                                <div class="slick-slide slick-cloned" data-index="-5"><img src="/images/clients/monster-dna.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="-4"><img src="/images/clients/sanex.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="-3"><img src="/images/clients/inside-track.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="-2"><img src="/images/clients/rocket.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="-1"><img src="/images/clients/pizza-hut.jpg" /></div>
+                                <div class="slick-slide slick-active slick-cloned client-item" data-index="0"><img src="/images/clients/dixons-travel.jpg" /></div>
+                                <div class="slick-slide slick-active slick-cloned client-item" data-index="1"><img src="/images/clients/huawei1.jpg" /></div>
+                                <div class="slick-slide slick-active slick-cloned client-item" data-index="2"><img src="/images/clients/harrods.jpg" /></div>
+                                <div class="slick-slide slick-active slick-cloned client-item" data-index="3"><img src="/images/clients/currys-pc-world.jpg" /></div>
+                                <div class="slick-slide slick-active slick-cloned client-item" data-index="4"><img src="/images/clients/samsung1.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="5"><img src="/images/clients/sony-vaio.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="6"><img src="/images/clients/warner-bros.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="7"><img src="/images/clients/adidas.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="8"><img src="/images/clients/reebok.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="9"><img src="/images/clients/panasonic.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="10"><img src="/images/clients/movistar.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="11"><img src="/images/clients/lexus.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="12"><img src="/images/clients/coca-cola.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="13"><img src="/images/clients/visa.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="14"><img src="/images/clients/windows-8.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="15"><img src="/images/clients/giorgio-armani.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="16"><img src="/images/clients/peroni.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="17"><img src="/images/clients/wired-magazine.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="18"><img src="/images/clients/hugo-boss.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="19"><img src="/images/clients/sony.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="20"><img src="/images/clients/ford.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="21"><img src="/images/clients/mass-3-effect.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="22"><img src="/images/clients/monster-dna.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="23"><img src="/images/clients/sanex.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="24"><img src="/images/clients/inside-track.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="25"><img src="/images/clients/rocket.jpg" /></div>
+                                <div class="slick-slide slick-cloned client-item" data-index="26"><img src="/images/clients/pizza-hut.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="27"><img src="/images/clients/dixons-travel.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="28"><img src="/images/clients/huawei1.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="29"><img src="/images/clients/harrods.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="30"><img src="/images/clients/currys-pc-world.jpg" /></div>
+                                <div class="slick-slide slick-cloned" data-index="31"><img src="/images/clients/samsung1.jpg" /></div>
+                            </div>
+                        </div><button type="button" data-role="none" class="slick-prev" style="display:block;">
+                            Previous</button><button type="button" data-role="none" class="slick-next" style="display:block;">
+                            Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------- Form --------- -->
+        <div class="background">
+        <form class="container mx-auto">
+                <h3>Request a Callback</h3>
+                <p>If you are interested in our products, software development, content creation or hardware solutions
+                    please contact us with the details below. For support queries visit the <a href="https://volumenetwork.atlassian.net/servicedesk/customer/portal/1">support
+                        desk</a>.</p>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Contact Number</label>
+                    <input type="tel" class="form-control" id="inputNumber" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Email</label>
+                <input type="email" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">How can we help?</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+            </div>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <!-- -------- HP -------- -->
+        <div class="container-fluid"><img src="images/hp.png" /></div>
+        <!-- -------- Bottom -------- -->
+        <div class="container-fluid">
+            <div class="row">
+                <i class="col-2 offset-4 fab fa-facebook"></i>
+                <i class="col-2 fab fa-twitter-square"></i>
+            </div>
+            <div class="row">
+                <h4>Support</h4>
+                <h4>&copy; 2019 Volume, All Rights Reserved</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
