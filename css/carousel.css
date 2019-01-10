@@ -1,0 +1,150 @@
+.carousel-header {
+    max-height: 500px;
+    overflow: hidden;
+    position: relative
+}
+
+.carousel-header .item img {
+    width: 100%
+}
+
+.carousel-header .title-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.carousel-header .title-wrapper h1.title {
+    font-size: 60px;
+    padding: 0 50px;
+    color: #fff;
+    text-shadow: 0 0 3px #3672b8
+}
+
+.carousel-header .carousel-caption {
+    position: absolute;
+    top: 550px;
+    right: 0;
+    z-index: 10000;
+    width: 400px;
+    height: 300px;
+    color: #fff
+}
+
+.carousel-header .carousel-control {
+    display: none
+}
+
+@media (max-width:767px) {
+    .carousel-header .title-wrapper h1.title {
+        font-size: 42px;
+        padding: 0 30px
+    }
+}
+
+@media (min-width:768px) {
+    .carousel-header .carousel-control {
+        display: block
+    }
+}
+
+@media (min-width:1700px) {
+    .carousel-header .title-wrapper h1.title {
+        padding: 0 45px
+    }
+}
+
+@media (min-width:2100px) {
+    .carousel-header .title-wrapper h1.title {
+        padding: 0 40px
+    }
+}
+
+.clients-carousel {
+    background-color: #fff;
+    padding: 50px 0;
+    border: 3px solid #eaedf0
+}
+
+.slick-prev,
+.slick-prev:active,
+.slick-prev:focus,
+.slick-prev:hover {
+    background: url(/images/icons/small-arrow-left-grey-1.png) 50% 50% no-repeat #fff
+}
+
+.slick-list {
+    height: 100px
+}
+
+.clients-carousel .slick-slide {
+    text-align: center;
+    padding: 10px 0;
+    height: 100px
+}
+
+.clients-carousel .slick-slide:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
+}
+
+.slick-next,
+.slick-prev {
+    width: 70px;
+    height: 60px;
+    border: 3px solid #eaedf0
+}
+
+.clients-carousel .slick-slide img {
+    max-height: 80px;
+    display: inline-block;
+    max-width: 200px
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: ''
+}
+
+.slick-prev {
+    left: -40px
+}
+
+.slick-next,
+.slick-next:active,
+.slick-next:focus,
+.slick-next:hover {
+    background: url(/images/icons/small-arrow-right-grey-1.png) 50% 50% no-repeat #fff
+}
+
+.slick-next {
+    right: -40px
+}
+
+.btn-dark.active,
+.btn-dark:active,
+.btn-light.active,
+.btn-light:active,
+.btn-volume.active,
+.btn-volume:active,
+.open>.dropdown-toggle.btn-dark,
+.open>.dropdown-toggle.btn-light,
+.open>.dropdown-toggle.btn-volume {
+    background-image: none
+}
+
+@media (max-width:767px) {
+    .slick-prev {
+        width: 56px;
+        left: -28px
+    }
+
+    .slick-next {
+        width: 56px;
+        right: -28px
+    }
+}
