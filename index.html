@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- --+== Bringing in icon sets from font-awesome ==+-- -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
-        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+        crossorigin="anonymous"></script>
 
     <!-- --+== JQuery ==+-- -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -23,94 +21,102 @@
 
     <!-- --+== My CSS and js ==+-- -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/carousel.css" />
-    <script src="javascript/carousel.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="https://volumenetwork.com/app/styles.css?v=1.0.0" />
+    <script>
+        $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+    
+})(jQuery);
+    </script>
 </head>
 
 <body>
     <header>
         <!-- -------- NavBar --------- -->
-        <nav class=" navbar navbar-expand-lg fixed pl-0 py-0 pr-1">
-            <a class="navbar-brand ml-0 mt-0-m"><img src="images/volume.png" /></a>
+        <nav class=" navbar navbar-expand-lg pl-sm-0 py-sm-0">
+            <a class="navbar-brand ml-0 mt-0 py-0"><img src="images/volume.png" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsable">
-                MENU
+                MENU &nbsp;<i class="fas fa-bars"></i>
             </button>
 
             <!-- ----_ Collapsable items _---- -->
-            <div class="collapse navbar-collapse my-0" id="navbarCollapsable">
+            <div class="collapse navbar-collapse" id="navbarCollapsable">
                 <ul class="navbar-nav ml-auto">
-                    <li class="navbar-link active">
+                    <li class="navbar-item active">
                         <p>HOME</p>
                     </li>
-                    <li class="navbar-link">
+                    <li class="navbar-item">
                         <p>PROJECTS</p>
                     </li>
-                    <li class="navbar-link">
+                    <li class="navbar-item">
                         <p>PRODUCTS</p>
                     </li>
-                    <li class="navbar-link">
+                    <li class="navbar-item">
                         <p>ABOUT US</p>
                     </li>
-                    <li class="navbar-link">
+                    <li class="navbar-item">
                         <p>CONTACT</p>
                     </li>
-                    <li class="navbar-link alternate">
-                        <p>WHAT WE DO</p>
+                    <li class="navbar-item alternate" i>
+                        <p class="alternate-text">WHAT WE DO</p>
                     </li>
                 </ul>
             </div>
         </nav>
+
+    </header>
+    <main>
         <!-- -------- Jumbotron --------- -->
         <div class="jumbotron jumbotron-fluid py-0">
             <div class="row">
                 <div class="col-12 video-promo-wrapper">
-                    <video class="video-promo w-100" muted autoplay loop src="images/volume-promo-2018-v4.mp4" allowfullscreen></video>
+                    <video class="video-promo w-100" muted autoplay loop src="images/volume-promo-2018-v4.mp4"
+                        allowfullscreen></video>
                     <!-- <div class="custom-controls">
-                        <button type="button" class="btn btn-light toggle-play"><i class="fas fa-play"></i></button>
-                        <button type="button" class="btn toggle-play"><i class="fas fa-arrows-alt"></i></button>
-                    </div> -->
+                            <button type="button" class="btn btn-light toggle-play"><i class="fas fa-play"></i></button>
+                            <button type="button" class="btn toggle-play"><i class="fas fa-arrows-alt"></i></button>
+                        </div> -->
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="content">
+        <div class="content-awards container">
             <!-- -------- Main Card --------- -->
             <div class="main-content">
                 <h1 class="display-4"> Who We Are</h1>
-                <h1 class="sub-header">Re-Defining Digital Experiences London-Spain</h1>
-                <p>
-                    We are a digital software and hardware company who develop our own bespoke software and
-                    hardware platforms allowing us to control every element of the detailed experience our clients
-                    require.
-                </p>
-                <p>
-                    We work with the world's largest retailers and brands designing digital experiences that
-                    deliver results for the retailer's in-shopper experience whilst ensuring a digitally focused
-                    customer journey that is compelling to the customer.
-                </p>
-                <h1 class="sub-header">What We Do</h1>
-                <ul>
-                    <li>
-                        Software Development
-                    </li>
-                    <li>
-                        Content Production & Licensing
-                    </li>
-                    <li>
-                        Hardware Manufacture
-                    </li>
-                    <li>
-                        Planning & Installation
-                    </li>
-                    <li>
-                        Logistics & Warehousing
-                    </li>
-                    <li>
-                        Customer Support
-                    </li>
-                </ul>
+                <div>
+                    <h1 class="sub-header">Re-Defining Digital Experiences London-Spain</h1>
+                    <p>
+                        We are a digital software and hardware company who develop our own bespoke software and
+                        hardware platforms allowing us to control every element of the detailed experience our
+                        clients
+                        require.
+                    </p>
+                    <p>
+                        We work with the world's largest retailers and brands designing digital experiences that
+                        deliver results for the retailer's in-shopper experience whilst ensuring a digitally
+                        focused
+                        customer journey that is compelling to the customer.
+                    </p>
+                    <h1 class="sub-header">What We Do</h1>
+                    <ul>
+                        <li>
+                            Software Development
+                        </li>
+                        <li>
+                            Content Production & Licensing
+                        </li>
+                        <li>
+                            Hardware Manufacture
+                        </li>
+                        <li>
+                            Planning & Installation
+                        </li>
+                        <li>
+                            Logistics & Warehousing
+                        </li>
+                        <li>
+                            Customer Support
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!-- -------- Awards --------- -->
             <div class="awards">
@@ -119,108 +125,261 @@
             </div>
         </div>
         </div>
-
         <!-- -------- Carousel --------- -->
-        <!-- <div class="container">
-            <div class="carousel slide" data-ride="carousel" data-interval="5000">
-                <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                    <div class="col-md-2 carousel-item active">
-                        <div class="panel panel-default">
-                            <img src
+        <!-- <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-md-right lead">
+                        <a class="btn btn-secondary-outline prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                        <a class="btn btn-secondary-outline next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-0 mt-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card h-100">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/dixons-travel.jpg" alt="Carousel 1">
+                                </div>
+                            </div>
+                            <div class="card h-100">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/huawei1.jpg" alt="Carousel 2">
+                                </div>
+                            </div>
+                            <div class="card h-100">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/harrods.jpg" alt="Carousel 3">
+                                </div>
+                            </div>
+                            <div class="card h-100">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/currys-pc-world.jpg" alt="Carousel 3">
+                                </div>
+                            </div>
+                            <div class="card h-100">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/samsung1.jpg" alt="Carousel 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/sony-vaio.jpg"
+                                        alt="Carousel 4">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/warner-bros.jpg"
+                                        alt="Carousel 5">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img-top card-img-top-250">
+                                    <img class="img-fluid" src="images/clients/adidas.jpg"
+                                        alt="Carousel 6">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-        <!-- </div> -->
-        <!-- -------- Slick Slider -------- -->
+            </div>
+        </section> -->
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/dixons-travel.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/huawei1.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/harrods.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/currys-pc-world.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/samsung1.jpg" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/sony-vaio.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/warner-bros.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/adidas.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/reebok.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/panasonic.jpg" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/movistar.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/lexus.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/coca-cola.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/visa.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/windows-8.jpg" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/giorgio-armani.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/peroni.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/wired-magazine.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/hugo-boss.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-xs-1">
+                            <img src="/images/clients/sony.jpg" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/ford.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/mass-3-effect.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/monster-dna.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/sanex.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/inside-track.jpg" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/monster-dna.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/sanex.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/inside-track.jpg" />
+                        </div>
+                        <div class="col-xs-2 offset-sm-1">
+                            <img src="/images/clients/rocket.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="row content-padding primary-bg fixed-width">
-            <div class="col-md-12">
-                <div class="clients-carousel">
-                    <div class="slick-initialized slick-slider">
-                        <div class="slick-list">
-                            <div class="slick-track">
-                                <div class="slick-slide slick-cloned" data-index="-5"><img src="/images/clients/monster-dna.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="-4"><img src="/images/clients/sanex.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="-3"><img src="/images/clients/inside-track.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="-2"><img src="/images/clients/rocket.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="-1"><img src="/images/clients/pizza-hut.jpg" /></div>
-                                <div class="slick-slide slick-active slick-cloned client-item" data-index="0"><img src="/images/clients/dixons-travel.jpg" /></div>
-                                <div class="slick-slide slick-active slick-cloned client-item" data-index="1"><img src="/images/clients/huawei1.jpg" /></div>
-                                <div class="slick-slide slick-active slick-cloned client-item" data-index="2"><img src="/images/clients/harrods.jpg" /></div>
-                                <div class="slick-slide slick-active slick-cloned client-item" data-index="3"><img src="/images/clients/currys-pc-world.jpg" /></div>
-                                <div class="slick-slide slick-active slick-cloned client-item" data-index="4"><img src="/images/clients/samsung1.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="5"><img src="/images/clients/sony-vaio.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="6"><img src="/images/clients/warner-bros.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="7"><img src="/images/clients/adidas.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="8"><img src="/images/clients/reebok.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="9"><img src="/images/clients/panasonic.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="10"><img src="/images/clients/movistar.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="11"><img src="/images/clients/lexus.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="12"><img src="/images/clients/coca-cola.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="13"><img src="/images/clients/visa.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="14"><img src="/images/clients/windows-8.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="15"><img src="/images/clients/giorgio-armani.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="16"><img src="/images/clients/peroni.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="17"><img src="/images/clients/wired-magazine.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="18"><img src="/images/clients/hugo-boss.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="19"><img src="/images/clients/sony.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="20"><img src="/images/clients/ford.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="21"><img src="/images/clients/mass-3-effect.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="22"><img src="/images/clients/monster-dna.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="23"><img src="/images/clients/sanex.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="24"><img src="/images/clients/inside-track.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="25"><img src="/images/clients/rocket.jpg" /></div>
-                                <div class="slick-slide slick-cloned client-item" data-index="26"><img src="/images/clients/pizza-hut.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="27"><img src="/images/clients/dixons-travel.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="28"><img src="/images/clients/huawei1.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="29"><img src="/images/clients/harrods.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="30"><img src="/images/clients/currys-pc-world.jpg" /></div>
-                                <div class="slick-slide slick-cloned" data-index="31"><img src="/images/clients/samsung1.jpg" /></div>
-                            </div>
-                        </div><button type="button" data-role="none" class="slick-prev" style="display:block;">
-                            Previous</button><button type="button" data-role="none" class="slick-next" style="display:block;">
-                            Next</button>
+        <!-- --+== Services ==+-- -->
+        <div class="container-fluid services px-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1>Services</h1>
+                    <p>Volume was specifically founded to develop and deliver excellent work that we genuinely feel
+                        proud of. We help our clients maximise the potential of their requirements through expert
+                        guidance and knowledge sharing. Our experienced colleagues delight in offering solutions
+                        that
+                        over deliver on expectations and just simply work reliably.</p>
+                </div>
+                <div class="grid col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="far fa-hand-pointer"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-skiing"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 grid">
+                            <i class="fas fa-plus"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- -------- Form --------- -->
         <div class="background">
-        <form class="container mx-auto">
+            <form class="container mx-auto">
                 <h3>Request a Callback</h3>
-                <p>If you are interested in our products, software development, content creation or hardware solutions
+                <p>If you are interested in our products, software development, content creation or hardware
+                    solutions
                     please contact us with the details below. For support queries visit the <a href="https://volumenetwork.atlassian.net/servicedesk/customer/portal/1">support
                         desk</a>.</p>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="tel" class="form-control" id="inputNumber" placeholder="Contact Number">
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Contact Number</label>
-                    <input type="tel" class="form-control" id="inputNumber" placeholder="">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputAddress" placeholder="Email">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Email</label>
-                <input type="email" class="form-control" id="inputAddress" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">How can we help?</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="">
-            </div>
-        </form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="How can we help?">
+                </div>
+                <div class="row">
+                    <button type="button" class="submit">Send Message</button>
+                    </button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
         <!-- -------- HP -------- -->
-        <div class="container-fluid"><img src="images/hp.png" /></div>
+        <div><img src="images/hp.png" /></div>
         <!-- -------- Bottom -------- -->
-        <div class="container-fluid">
-            <div class="row">
-                <i class="col-2 offset-4 fab fa-facebook"></i>
-                <i class="col-2 fab fa-twitter-square"></i>
+        <div class="container">
+            <div class="row icons">
+                <i class="col-2 offset-4 fab fa-twitter"></i>
+                <i class="col-2 fab fa-linkedin-in"></i>
             </div>
             <div class="row">
                 <h4>Support</h4>
